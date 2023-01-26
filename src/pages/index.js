@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import StoreInfo from 'components/StoreInfo';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,24 +18,10 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
+          <h1 className={inter.className}>Salmon Cookies</h1>
         </div>
+
+        <StoreInfo />
 
         <div className={styles.grid}>
           <Link
@@ -48,7 +35,6 @@ export default function Home() {
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
           </Link>
-
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}

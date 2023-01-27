@@ -1,3 +1,10 @@
+import CookieDisplay from "components/CookieStore";
+
 export default function SalesData() {
-  return <div>Sales Data</div>
+  return <div>
+      <h1>
+        Sales Data
+      </h1>
+      <CookieDisplay />
+    </div>
 }
